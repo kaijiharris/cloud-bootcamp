@@ -1,0 +1,16 @@
+# Python
+.venv/
+__pycache__/
+
+#Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+plan.out
+
+# Secrets: never commit secrets, keys, or credentials
+*.pem
+*.key
+.env
+*.csv
