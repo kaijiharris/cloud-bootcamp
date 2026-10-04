@@ -2,6 +2,11 @@ pipeline {
     agent any
 
     stages {
+                stage('Checkout') {
+            steps {
+                git url: 'https://github.com/kaijiharris/cloud-bootcamp.git', branch: 'main'
+            }
+        }
         stage('Build') {
             steps {
                 dir('week6-docker') {
